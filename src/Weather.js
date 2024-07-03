@@ -1,16 +1,19 @@
 import React from "react";
 import "./Weather.css";
-
 export default function Weather() {
   return (
-    <div className="WeatherInfo">
+    <div className="weather">
       <form>
         <input
           type="search"
           placeholder="Enter a city..."
           className="form-entry"
         />
-        <input type="submit" value="Search" className="btn-primary" />
+        <input
+          type="submit"
+          value="Search"
+          className="btn btn-primary w-100 shadow-sm"
+        />
       </form>
       <h1>New York</h1>
       <img

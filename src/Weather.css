@@ -1,0 +1,50 @@
+:root {
+  --primary-color: #272142;
+  --secondary-color: #70757a;
+  --background-color: #ecedee;
+  --button-color: #f4ce14;
+  --accent-color: #379777;
+}
+.weather {
+  border: rgba(0, 0, 0, 0.2) solid;
+  border-radius: 4px;
+  max-width: 700px;
+  padding: 30px;
+  margin: 30px auto;
+}
+.weather form {
+  margin-top: 20px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #f9f7fe;
+}
+.weather .form-entry {
+  border: none;
+  border-radius: 4px;
+  background: var(--background-color);
+  width: 100%;
+  padding: 8px 10px;
+}
+.weather .btn {
+  background: var(--button-color);
+  border: none;
+  color: #000;
+  padding: 8px;
+  transition: background-color 0.5s ease-in-out;
+}
+.weather .btn:hover {
+  background-color: var(--primary-color);
+  color: #ffff;
+}
+.weather h1 {
+  color: var(--primary-color);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  margin: 20px 0 10px;
+}
+.weather li {
+  list-style: none;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--secondary-color);
+}
