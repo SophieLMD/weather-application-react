@@ -42,9 +42,46 @@
   line-height: 48px;
   margin: 20px 0 10px;
 }
+.weather h2 {
+  font-size: 22px;
+  color: var(--primary-color);
+  line-height: 26px;
+}
+.weather ul {
+  margin: 0;
+  padding: 0;
+}
 .weather li {
   list-style: none;
   font-size: 12px;
   line-height: 18px;
   color: var(--secondary-color);
+}
+.weather .temperature {
+  font-size: 56px;
+  line-height: 64px;
+  font-weight: 400;
+  color: var(--primary-color);
+  margin-left: 5px;
+}
+.weather .unit {
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  top: -32px;
+  margin-left: 5px;
+  line-height: 1;
+}
+.weather strong {
+  color: #379777;
+}
+
+.App footer a {
+  color: var(--accent-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+.App footer a:hover {
+  text-decoration: underline;
 }
