@@ -2,13 +2,13 @@ import React from "react";
 import WeatherIcon from "./WeatherIcon";
 import "./WeatherForecastDaily.css";
 import axios from "axios";
-export default function WeatherForecastDaily() {
+export default function WeatherForecastDaily(props) {
   function handleResponse(response) {
-    console.log(response.data);
+    console.log(props);
   }
   let apiKey = "866a208a73eeff02182218e9441647a1";
-  let lon = 55.4;
-  let lat = 3.4;
+  let lon = props.coords.lon;
+  let lat = props.coords.lat;
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(handleResponse);
   return (

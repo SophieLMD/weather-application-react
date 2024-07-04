@@ -16,6 +16,7 @@ export default function Weather(props) {
       city: response.data.name,
       description: response.data.weather[0].description,
       icon: response.data.weather[0].icon,
+      coord: response.data.coord,
     });
   }
   function handleSubmit(event) {
@@ -55,7 +56,7 @@ export default function Weather(props) {
           </div>
         </form>
         <WeatherInfo city={city} data={weatherData} />
-        <WeatherForecastDaily />
+        <WeatherForecastDaily coords={weatherData.coord} />
       </div>
     );
   } else {
