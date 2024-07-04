@@ -8,10 +8,11 @@ export default function WeatherForecastDaily() {
         <div className="col">
           <div className="forecast-day">Thu</div>
           <div className="forecast-icon">
-            <WeatherIcon code="01d" />
+            <WeatherIcon code="01d" size={40} />
           </div>
           <div className="forecast-units">
-            <span>19°</span> | <span>10°</span>
+            <span className="high">19°</span>
+            <span className="low">10°</span>
           </div>
         </div>
       </div>
