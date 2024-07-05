@@ -7,8 +7,8 @@ export default function WeatherForecastDaily(props) {
     console.log(props);
   }
   let apiKey = "866a208a73eeff02182218e9441647a1";
-  let lon = props.coord.lon;
-  let lat = props.coord.lat;
+  let lon = props.coords.lon;
+  let lat = props.coords.lat;
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(handleResponse);
   return (
